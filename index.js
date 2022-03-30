@@ -20,7 +20,8 @@ const data = {
 
 calcCash = (own) => {
     own = own || 0;
-    const everyCash = Array.prototype.slice.call(arguments);
+    const everyCash = [0, data.cash];
+    // Array.prototype.slice.call(arguments);
     let total = own;
     for (let i = 0; i < everyCash[1].length; i++) {
         total += +everyCash[1][i];
